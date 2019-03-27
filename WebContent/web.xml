@@ -45,7 +45,9 @@
 	</servlet-mapping>
 	
 	
-	<!--
+	
+	  <!--
+	transactionType
 	<servlet>
     <servlet-name>GetComboServlet</servlet-name>
     <servlet-class>servlet.GetComboServlet</servlet-class>
@@ -55,8 +57,8 @@
     <url-pattern>/comboData</url-pattern>
   </servlet-mapping>
   
+
   -->
-  
 	
 	
 	

@@ -42,15 +42,16 @@
 		<h4>2) Display the total number and total values of transactions
 			for a given type</h4>
 		<form action="transactionType">
-			<select class="Transaction_Type">
-				<option value="education">Education</option>
-				<option value="entertainment">Entertainment</option>
-				<option value="grocery">Grocery</option>
-				<option value="gas">Gas</option>
-				<option value="bill">Bills</option>
-				<option value="test">Test</option>
-				<option value="healthcare">Health care</option>
-			</select> <input type="submit" value="Submit">
+			<select name="Transaction_Type">
+				<option value="Education">Education</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="Grocery">Grocery</option>
+				<option value="Gas">Gas</option>
+				<option value="Bills">Bills</option>
+				<option value="Test">Test</option>
+				<option value="Healthcare">Health Care</option>
+			</select> 
+			<input type="submit" value="Submit">
 		</form>
 
 		<br> <br>
