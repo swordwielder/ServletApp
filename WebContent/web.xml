@@ -17,8 +17,7 @@
 
 	<servlet-mapping>
 		<servlet-name>zipcode</servlet-name>
-
-		<url-pattern>/zipCodeTransaction</url-pattern>		
+		<url-pattern>/zipcodeTransaction</url-pattern>		
 	</servlet-mapping>
 	
 	

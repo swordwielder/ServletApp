@@ -32,7 +32,7 @@
 		<h4>1) display the transactions made by customers living in a
 			given zip code for a given month and year.</h4>
 		Zip Code <br>
-		<form action="zipCodeTransaction">
+		<form action="zipcodeTransaction">
 			<input type="text" name="zipcode" placeholder="39120"> <input
 				type="month" id="zip" name="zipmonth" min="2018-01" value="2018-05" max="2018-12">
 			<br> <input type="submit" value="Submit">
