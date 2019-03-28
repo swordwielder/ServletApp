@@ -25,7 +25,6 @@ public class ZipServlet extends HttpServlet{
 		int zipcode = Integer.valueOf(zip);
 		
 		PrintWriter out = res.getWriter();
-		out.println("This is a test\n");
 		TransactionDao td = new TransactionDao();
 		List<transaction> lt = new ArrayList<transaction>();
 		try {
@@ -37,9 +36,6 @@ public class ZipServlet extends HttpServlet{
 		
 		
 		if (!lt.isEmpty()) {
-			out.println(zipcode);
-			out.println(month);
-			out.println("skipping line \n");
 			
 			String strFormat = "%-15s%-7s%-7s%-10s%-25s%-15s%-15s%-20s%-15s\n";
 			out.printf(strFormat, "Transaction ID", "Day","Month", "Year", "Credit Card Num", "SSN", "Branch Code"
