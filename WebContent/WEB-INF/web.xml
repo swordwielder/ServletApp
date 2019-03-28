@@ -69,6 +69,21 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+		<servlet-name>TwoDatesServlet</servlet-name>
+		<servlet-class>servlet.TwoDatesServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TwoDatesServlet</servlet-name>
+
+		<url-pattern>/twoDatesTransaction</url-pattern>		
+	</servlet-mapping>
+	
+	
+	
+	
+	
 	<!--
 	<servlet>
     <servlet-name>GetComboServlet</servlet-name>

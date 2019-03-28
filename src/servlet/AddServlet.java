@@ -3,6 +3,9 @@ package servlet;
 import java.io.IOException;
 import java.io.InterruptedIOException;
 import java.io.PrintWriter;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,8 +16,9 @@ import model.Customer;
 
 public class AddServlet extends HttpServlet
 {	
-	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException
+	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
+	
 		String ssn2 = req.getParameter("ssn");
 		String creditCard = req.getParameter("creditCard");
 		PrintWriter out = res.getWriter();
@@ -39,6 +43,16 @@ public class AddServlet extends HttpServlet
 		} catch (Exception e) {
 			out.println("Bad Entry");
 		}
+		
+		
+		//TODO
+		req.setAttribute("hkjh",cu);
+		RequestDispatcher reqDis = req.getRequestDispatcher("");
+		reqDis.forward(req, res);
+		//TODO
+		
+		
+		
 		
 		if (cu!=null) {
 			String customerFormat = "%-15s%-9s%-15s%-10s%-20s%-10s%-20s%-10s%-8s%-15s%-10s%-10s%-10s\n";

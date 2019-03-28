@@ -18,7 +18,7 @@
 	rel="stylesheet">
 <title>Case Study</title>
 </head>
-<body>
+<body background="galaxy.jpg">
 	<div class="header" id="top">
 		<h2>Case Study Credit Card System using JSP/Servlets</h2>
 		Data from java class ::
@@ -27,6 +27,7 @@
 
 	<br>
 	<br>
+	
 	<div class="alignleft">
 
 		<h4>1) display the transactions made by customers living in a
@@ -112,8 +113,8 @@
 			SSN<br> <input type="text" name="twoDatessn" placeholder="123456100"><br>
 			Credit Card<br> <input type="text" name="twoDatescreditCard"
 				placeholder="4210653310061055"> <br> Date 1:<br> <input
-				type="date" name="date1"> <br> Date 2:<br> <input
-				type="date" name="date2"> <br> <input type="submit"
+				type="date" name="date1" min="2018-01-01" max="2018-12-31" value="2018-05-01"> <br> Date 2:<br> <input
+				type="date" name="date2" min="2018-01-01" max="2018-12-31" value="2018-05-29"> <br> <input type="submit"
 				value="Submit">
 		</form>
 	</div>
