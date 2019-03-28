@@ -34,8 +34,8 @@
 		Zip Code <br>
 		<form action="zipCodeTransaction">
 			<input type="text" name="zipcode" placeholder="39120"> <input
-				type="month" id="start" name="start" min="2018-03" value="2018-05">
-			<br> <input type="submit" value="Generate">
+				type="month" id="start" name="zipmonth" min="2018-01" value="2018-01" max="2018-12">
+			<br> <input type="submit" value="Submit">
 		</form>
 		<br> <br>
 
