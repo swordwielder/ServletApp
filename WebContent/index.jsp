@@ -34,7 +34,7 @@
 		Zip Code <br>
 		<form action="zipCodeTransaction">
 			<input type="text" name="zipcode" placeholder="39120"> <input
-				type="month" id="start" name="zipmonth" min="2018-01" value="2018-01" max="2018-12">
+				type="month" id="zip" name="zipmonth" min="2018-01" value="2018-05" max="2018-12">
 			<br> <input type="submit" value="Submit">
 		</form>
 		<br> <br>
@@ -61,7 +61,7 @@
 
 		<form action="stateTransaction">
 			<input type="text" name="state" placeholder="NY, NJ"> <br>
-			<input type="submit" value="Generate">
+			<input type="submit" value="Submit">
 		</form>
 
 		<br> <br>
@@ -81,8 +81,8 @@
 	<div class="alignright">
 		<h4>5) Modify the existing account details of a customer.</h4>
 		<form action="modify">
-			SSN<br> <input type="text" name="ssn" placeholder="123456100"><br>
-			Credit Card<br> <input type="text" name="creditCard"
+			SSN<br> <input type="text" name="modifyssn" placeholder="123456100"><br>
+			Credit Card<br> <input type="text" name="modifycreditCard"
 				placeholder="4210653310061055"> <br> <input
 				type="submit" value="Submit">
 		</form>
@@ -93,12 +93,13 @@
 			and year</h4>
 
 		<form action="monthlyBill">
-			SSN<br> <input type="text" name="ssn" placeholder="123456100"><br>
-			Credit Card<br> <input type="text" name="creditCard"
+			SSN<br> <input type="text" name="billssn" placeholder="123456100"><br>
+			Credit Card<br> <input type="text" name="billcreditCard"
 				placeholder="4210653310061055"> <br> Month and Year <br>
-			<input type="month" id="start" name="start" min="2018-03"
-				value="2018-05"> <br> <input type="submit"
-				value="Generate">
+			<input type="month" id="start" name="billmonth" min="2018-01"
+				value="2018-05" max="2018-12"> <br> 
+				<input type="submit"
+				value="Submit">
 		</form>
 
 
@@ -108,12 +109,12 @@
 		<h4>7) Display the transactions made by a customer between two
 			dates</h4>
 		<form action="twoDatesTransaction">
-			SSN<br> <input type="text" name="ssn" placeholder="123456100"><br>
-			Credit Card<br> <input type="text" name="creditCard"
+			SSN<br> <input type="text" name="twoDatessn" placeholder="123456100"><br>
+			Credit Card<br> <input type="text" name="twoDatescreditCard"
 				placeholder="4210653310061055"> <br> Date 1:<br> <input
 				type="date" name="date1"> <br> Date 2:<br> <input
 				type="date" name="date2"> <br> <input type="submit"
-				value="Generate">
+				value="Submit">
 		</form>
 	</div>
 

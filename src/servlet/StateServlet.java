@@ -18,27 +18,29 @@ public class StateServlet extends HttpServlet{
 		String state = req.getParameter("state");
 		
 		PrintWriter out = res.getWriter();
-		out.println("This is a test\n");
-		out.println(state);
 		
+		
+//		out.println("This is a test\n");
+//		out.println(state);
+//		
 		
 		TransactionDao td = new TransactionDao();
 		String stateFormat = "%-15s%-15s%-10s\n";
 		transaction myState = new transaction();
 		try {
 			myState = td.getTotalByState(state);
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			out.println("Bad Entry");
 		}
 		
-		
-		out.format(stateFormat, "Total Number", "Total Value", "Brach State\n");
-		out.format(stateFormat, myState.getCount(),"$"+myState.getValue(), state.toUpperCase()+"\n");
-		
-		
-		
-		
+		if (myState!=null) {
+			out.format(stateFormat, "Total Number", "Total Value", "Brach State\n");
+			out.format(stateFormat, myState.getCount(),"$"+myState.getValue(), state.toUpperCase()+"\n");
+		}else {
+			out.println("Bad Entry");
+		}
 		
 		
 	}

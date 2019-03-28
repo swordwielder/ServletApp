@@ -5,6 +5,24 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
   http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
   
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+	
+	<servlet>
+		<servlet-name>zipcode</servlet-name>
+		<servlet-class>servlet.ZipServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>zipcode</servlet-name>
+
+		<url-pattern>/zipCodeTransaction</url-pattern>		
+	</servlet-mapping>
+	
+	
+	
   <servlet>
 		<servlet-name>Trans</servlet-name>
 		<servlet-class>servlet.AddServlet</servlet-class>
@@ -47,15 +65,17 @@
 	
 	
 	<servlet>
-		<servlet-name>ZipServlet</servlet-name>
-		<servlet-class>servlet.ZipServlet</servlet-class>
+		<servlet-name>BillServlet</servlet-name>
+		<servlet-class>servlet.BillServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>ZipServlet</servlet-name>
+		<servlet-name>BillServlet</servlet-name>
 
-		<url-pattern>/zipCodeTransaction</url-pattern>		
+		<url-pattern>/monthlyBill</url-pattern>		
 	</servlet-mapping>
+	
+
 	
 	
 	
@@ -81,12 +101,7 @@
 	
 	
 	
-	 <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+	 
 	
-	
-	
-
 
 </web-app>
