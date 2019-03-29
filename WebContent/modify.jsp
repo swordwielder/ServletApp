@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="./style.css" type="text/css">
+<link rel="stylesheet" href="./modify.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Righteous"
 	rel="stylesheet">
 <title>ModifyCustomer</title>
@@ -26,9 +26,8 @@ Test
 
 <p>
 <h3>Customer Field Attributes </h3>
-<font size="+2"> <pre class="tab">
-<tr>
-SSN:    <%= ssn2%><br>
+<font size="+2"> <pre class="tab"><tr>
+SSN:    <%= ssn2%>
 Credit Card No: <%= credit%>
 <%if (cu!=null){ %>
 <td>First Name:        <%= cu.getFirstName()%></td>
