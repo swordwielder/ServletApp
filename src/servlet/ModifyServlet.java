@@ -32,8 +32,8 @@ public class ModifyServlet extends HttpServlet{
 			e.printStackTrace();
 		}
 		
-		out.println(ssn2);
-		out.println(credit);
+//		out.println(ssn2);
+//		out.println(credit);
 		
 		
 		// TODO

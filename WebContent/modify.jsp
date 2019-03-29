@@ -3,6 +3,7 @@
 <%@ page import="dao.*"%>
 <%@ page import="model.*"%>
 <%@ page import="java.util.*" %>
+<%@ page import="java.io.PrintWriter" %>
 
 <html>
 <head>
@@ -16,8 +17,24 @@
 <p>
 Test
 
-<%String name = (String)request.getAttribute("ModifyCustomer"); %>
-<%= name%>
+
+<% String ssn2 = request.getParameter("modifyssn");%>
+
+<%  String credit = request.getParameter("modifycreditCard");%>
+<%Customer cu = new Customer(); %>
+<%CustomerDao cd = new CustomerDao(); %>
+<% cu = cd.getCustDetails(Integer.parseInt(ssn2), credit);%>
+<%= ssn2%>
+<%= credit%>
+
+
+
+
+
+
+
+
+
 
 </p>
 
