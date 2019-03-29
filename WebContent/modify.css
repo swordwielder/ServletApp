@@ -1,0 +1,31 @@
+body {
+	background: linear-gradient(90deg, rgba(132, 226, 34, 1) 0%,
+		rgba(18, 75, 72, 1) 100%);
+}
+
+
+.header {
+	font-family: 'Righteous', cursive;
+}
+
+.Transaction_Type {
+	border-radius: 50px;
+}
+
+.transactions {
+	font-size: 200%;
+}
+
+li {
+	color: red;
+	padding-top: 6px;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+}
