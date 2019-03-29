@@ -84,6 +84,23 @@
 	
 	
 	
+	
+	<servlet>
+		<servlet-name>ModifyCustomer</servlet-name>
+		<servlet-class>servlet.ModifyServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ModifyCustomer</servlet-name>
+
+		<url-pattern>/modify</url-pattern>		
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	
 	<!--
 	<servlet>
     <servlet-name>GetComboServlet</servlet-name>
@@ -100,7 +117,8 @@
 	
 	
 	 <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.jsp </welcome-file>
+    <welcome-file>modify.jsp </welcome-file>
   </welcome-file-list>
 	
 	

@@ -22,6 +22,8 @@ public class TypeServlet extends HttpServlet {
 
 		TransactionDao td = new TransactionDao();
 		transaction mytransaction = new transaction();
+		
+				
 		try {
 			mytransaction = td.gettotalbyType(type);
 
@@ -30,11 +32,7 @@ public class TypeServlet extends HttpServlet {
 			out.println("Bad Entry");
 		}
 
-		// TODO
-		req.setAttribute("typetransaction", mytransaction);
-		RequestDispatcher reqDis = req.getRequestDispatcher("typetransaction");
-		reqDis.forward(req, res);
-		// TODO
+		
 
 		if (mytransaction != null) {
 			out.print("Count \t  Value\n");
