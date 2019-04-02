@@ -22,19 +22,23 @@ public class TwoDatesServlet extends HttpServlet{
 		String date2 = req.getParameter("date2");
 		PrintWriter out = res.getWriter();
 		
-		
-		out.println(ssn2);
-		out.println(credit);
-		out.println(date1);
-		out.println(date2);
-		
+		int ssn =0;
+		try {
+			ssn =Integer.parseInt(ssn2);
+		}catch(Exception we) {
+			
+		}
+//		out.println(ssn2);
+//		out.println(credit);
+//		out.println(date1);
+//		out.println(date2);
 //		String [] firstDate = date1.split("-");
 //		String [] secondDate = date2.split("-");
 		
 		TransactionDao td = new TransactionDao();
 		List<transaction> transactionDates = new ArrayList<transaction>();
 		try {
-			transactionDates = td.getTransactionByDates(Integer.parseInt(ssn2), 
+			transactionDates = td.getTransactionByDates(ssn, 
 					credit, date1, date2);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

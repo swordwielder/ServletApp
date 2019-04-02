@@ -22,14 +22,16 @@ function myFunction() {
 		<%
 		String ssn2 = request.getParameter("modifyssn");%>
 		<%String credit = request.getParameter("modifycreditCard");%>
+		<%Customer cu = (Customer) request.getAttribute("ModifyCustomer");%>
+		<!--  
+		<%int ssn =0; %>
+		<%try{ ssn = Integer.parseInt(ssn2);%>
+		<% }catch(Exception wejir){}%>
+		-->
+		
+		<%CustomerDao cd = new CustomerDao();%>
 		<%
-			Customer cu = (Customer) request.getAttribute("ModifyCustomer");
-		%>
-		<%
-			CustomerDao cd = new CustomerDao();
-		%>
-		<%
-			cu = cd.getCustDetails(Integer.parseInt(ssn2), credit);
+			cu = cd.getCustDetails(ssn, credit);
 		%>
 	<form action="ModifyCustomerDetail">
 		<select name="ModifyType">
@@ -69,10 +71,6 @@ Credit Card No: <%=credit%>
 			</tr>
 </font>
 	
-
-
-
-
 
 
 

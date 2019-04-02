@@ -21,9 +21,16 @@ public class ModifyServlet extends HttpServlet{
 		String ssn2 = req.getParameter("modifyssn");
 		String credit = req.getParameter("modifycreditCard");
 		
+		int ssn=0;
+		try {
+			ssn =Integer.parseInt(ssn2);
+		}catch (Exception uiwe) {
+			
+		}
+		
 		Customer cu = new Customer();
 		try {
-			cu = cd.getCustDetails(Integer.parseInt(ssn2), credit);
+			cu = cd.getCustDetails(ssn, credit);
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -31,9 +38,6 @@ public class ModifyServlet extends HttpServlet{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-//		out.println(ssn2);
-//		out.println(credit);
 		
 		
 		// TODO

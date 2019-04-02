@@ -22,8 +22,12 @@ public class ZipServlet extends HttpServlet{
 		
 		int year = Integer.valueOf(spl[0]);
 		int mon = Integer.valueOf(spl[1]);
-		int zipcode = Integer.valueOf(zip);
-		
+		int zipcode =0;
+		try {
+		zipcode = Integer.valueOf(zip);
+		}catch(Exception uhduf) {
+			
+		}
 		PrintWriter out = res.getWriter();
 		TransactionDao td = new TransactionDao();
 		List<transaction> lt = new ArrayList<transaction>();

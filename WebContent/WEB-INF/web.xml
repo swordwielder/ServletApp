@@ -6,22 +6,23 @@
   http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
   
   
-  
+ 
   	<servlet>
 		<servlet-name>zipcode</servlet-name>
 		<servlet-class>servlet.ZipServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>zipcode</servlet-name>
 		<url-pattern>/zipcodeTransaction</url-pattern>		
 	</servlet-mapping>
 	
+	
+	
+	<!-- 4th -->
   <servlet>
 		<servlet-name>Trans</servlet-name>
 		<servlet-class>servlet.AddServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>Trans</servlet-name>
 
@@ -34,7 +35,6 @@
 		<servlet-name>state</servlet-name>
 		<servlet-class>servlet.StateServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>state</servlet-name>
 
@@ -49,7 +49,6 @@
 		<servlet-name>TypeServlet</servlet-name>
 		<servlet-class>servlet.TypeServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>TypeServlet</servlet-name>
 
@@ -57,16 +56,17 @@
 	</servlet-mapping>
 	
 	
+	
 	<servlet>
 		<servlet-name>BillServlet</servlet-name>
 		<servlet-class>servlet.BillServlet</servlet-class>
 	</servlet>
-
 	<servlet-mapping>
 		<servlet-name>BillServlet</servlet-name>
 
 		<url-pattern>/monthlyBill</url-pattern>		
 	</servlet-mapping>
+	
 	
 	
 	<servlet>
@@ -79,7 +79,6 @@
 
 		<url-pattern>/twoDatesTransaction</url-pattern>		
 	</servlet-mapping>
-	
 	
 	
 	

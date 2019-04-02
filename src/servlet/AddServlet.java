@@ -18,42 +18,30 @@ public class AddServlet extends HttpServlet
 {	
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
 	{
-	
+
 		String ssn2 = req.getParameter("ssn");
 		String creditCard = req.getParameter("creditCard");
 		PrintWriter out = res.getWriter();
-		int ssn = Integer.valueOf(ssn2);
-		
-//		out.println(ssn2);
-//		out.println("skipping line");
-//		out.println();
-//		out.println("The ssn is " + ssn);
-//		out.println("The credit card is " + creditCard);
-//		out.println(cu.getFirstName());		
-		
-		
+
+		int ssn=0;
+		try {
+				ssn = Integer.valueOf(ssn2);
+			}catch(Exception iuhewr) {
+		}
+
+
+
 		CustomerDao cd = new CustomerDao();
 		Customer cu = new Customer();
-		
-		
+
 		try {
-			cu = cd.getCustDetails(ssn, creditCard);
-			
-			
+			cu = cd.getByCreditSSN(ssn, creditCard);
 		} catch (Exception e) {
 			out.println("Bad Entry");
 		}
-		
-		
-		//TODO
-		req.setAttribute("hkjh",cu);
-		RequestDispatcher reqDis = req.getRequestDispatcher("");
-		reqDis.forward(req, res);
-		//TODO
-		
-		
-		
-		
+
+
+
 		if (cu!=null) {
 			String customerFormat = "%-15s%-9s%-15s%-10s%-20s%-10s%-20s%-10s%-8s%-15s%-10s%-10s%-10s\n";
 			out.format(customerFormat, "First Name","Middle","Last Name","SSN", "Credit Card Num"
@@ -65,8 +53,8 @@ public class AddServlet extends HttpServlet
 		}else {
 			out.println("Bad Entry");
 		}
-		
-		
+
+
 	}
-	
+
 }
