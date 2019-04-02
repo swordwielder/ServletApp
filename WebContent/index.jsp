@@ -21,8 +21,6 @@
 <body background="galaxy.jpg">
 	<div class="header" id="top">
 		<h2>Case Study Credit Card System using JSP/Servlets</h2>
-		Data from java class ::
-		<%=dataTodisplay%>
 	</div>
 
 	<br>
