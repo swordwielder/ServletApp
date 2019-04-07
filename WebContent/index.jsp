@@ -13,12 +13,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="./style.css" type="text/css">
+<link rel="stylesheet" href="./index.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Righteous"
 	rel="stylesheet">
 <title>Case Study</title>
 </head>
-<body background="galaxy.jpg">
+<body>
 	<div class="header" id="top">
 		<h2>Case Study Credit Card System using JSP/Servlets</h2>
 	</div>
@@ -58,7 +58,7 @@
 		<h4>3) Display the total number and total values of transactions
 			for branches in a given state</h4>
 
-		<form action="stateTransaction">
+		<form action="stateTransaction">s
 			<input type="text" name="state" placeholder="NY, NJ"> <br>
 			<input type="submit" value="Submit">
 		</form>
