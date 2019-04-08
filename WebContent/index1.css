@@ -1,9 +1,9 @@
-body{
-  background-image: url("business.png");
-  background-color: lgreen;
-  background-repeat: repeat;
-  height:900px;
-  background-position:center;
+body {
+	background-image: url("business.png");
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .header {
@@ -31,4 +31,3 @@ li {
 .alignright {
 	float: right;
 }
-

@@ -13,7 +13,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="./index.css" type="text/css">
+<link rel="stylesheet" href="./index1.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Righteous"
 	rel="stylesheet">
 <title>Case Study</title>
