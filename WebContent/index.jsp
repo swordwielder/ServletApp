@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css?family=Righteous"
 	rel="stylesheet">
 <title>Cognizant Credit Card System</title>
-<h1>Cognizant</h1>
+<h1>Platform By Perscholas</h1>
 </head>
 
 
