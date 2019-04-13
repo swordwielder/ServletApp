@@ -35,6 +35,7 @@ function myFunction() {
 		%>
 	<form action="ModifyCustomerDetail">
 		<select name="ModifyType">
+			<option selected="true" disabled="disabled">Edit this Field</option>  
 			<option value="First_Name">First Name</option>
 			<option value="Middle_Name">Middle Name</option>
 			<option value="Last_Name">Last Name</option>
@@ -46,7 +47,11 @@ function myFunction() {
 			<option value="Zipcode">Customer Zip Code</option>
 			<option value="Number">Phone Number</option>
 			<option value="Email">Customer Email</option>
-		</select> <button onclick="myFunction()">Edit this Field</button>
+		</select><br>
+		 <input type="text" name="newValue" placeholder="New Value"><br>
+		 
+		 
+		 <input type="submit" value="Submit"><!-- <button onclick="myFunction()"></button> -->
 	</form>
 	<p>
 	<h3>Customer Field Attributes</h3>
@@ -71,7 +76,9 @@ Credit Card No: <%=credit%>
 			</tr>
 </font>
 	
-
+<%=request.setAttribute("ModifyCustomer", cu) %>
+<%=RequestDispatcher reqDis = req.getRequestDispatcher("EditFieldServlet.java") %>
+<%=reqDis.forward(request, response) %>
 
 
 

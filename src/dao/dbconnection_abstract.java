@@ -17,21 +17,15 @@ public abstract class dbconnection_abstract {
 
 	protected void myconnection() throws Exception {
 		// step 1
-		FileReader f = new FileReader("db.properties");
-		// will hold properties of f
-		Properties p = new Properties();
-		// p loads properties
-		p.load(f);
-		// step 2
 		//FileReader f = new FileReader("db.properties");
-		   // will hold properties of f 
-		   //Properties p = new Properties();
-		   // p loads properties
-		   //p.load(f);
-		   // step 2
+		// will hold properties of f
+		//Properties p = new Properties();
+		// p loads properties
+		//p.load(f);
+		
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection(p.getProperty("url"), p.getProperty("username"), p.getProperty("password"));
-		//con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CDW_SAPP?useSSL=false", "sqlsql", "password");
+		//con = DriverManager.getConnection(p.getProperty("url"), p.getProperty("username"), p.getProperty("password"));
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CDW_SAPP?useSSL=false", "sqlsql", "password");
 		
 	}
 }
