@@ -76,9 +76,6 @@ Credit Card No: <%=credit%>
 			</tr>
 </font>
 	
-<%=request.setAttribute("ModifyCustomer", cu) %>
-<%=RequestDispatcher reqDis = req.getRequestDispatcher("EditFieldServlet.java") %>
-<%=reqDis.forward(request, response) %>
 
 
 
