@@ -21,7 +21,7 @@ public class EditFieldServlet extends HttpServlet{
 		String type = req.getParameter("ModifyType");
 		String newValue = req.getParameter("newValue");
 		
-		Customer cu = new Customer();
+		Customer cust = new Customer();
 		req.setAttribute("variable name","value of its");
 		//session.setAttribute("variable name","value");
 		

@@ -21,7 +21,7 @@
 <body>
 	
 	<br><br><br><br><br><br>
-	<div style="width:100%; height:100%" class="button">
+	<div class="button">
 	<a href="customer.jsp" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start</a>
 	</div>
 
