@@ -27,5 +27,11 @@ public class EditFieldServlet extends HttpServlet{
 		
 	}
 	
+	public Customer test(HttpServletRequest req, HttpServletResponse res, Customer c) {
+		
+		
+		return c;
+	}
+	
 
 }
