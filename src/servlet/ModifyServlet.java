@@ -43,7 +43,11 @@ public class ModifyServlet extends HttpServlet{
 		// TODO
 		req.setAttribute("ModifyCustomer", cu);
 		RequestDispatcher reqDis = req.getRequestDispatcher("modify.jsp");
+		//RequestDispatcher reqDisp = req.getRequestDispatcher("editField.jsp");
+		//reqDisp.forward(req, res);
+		
 		reqDis.forward(req, res);
+		
 		// TODO
 		
 	}

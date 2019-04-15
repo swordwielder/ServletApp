@@ -25,13 +25,7 @@ public class EditFieldServlet extends HttpServlet{
 		req.setAttribute("variable name","value of its");
 		//session.setAttribute("variable name","value");
 		
-	}
-	
-	public Customer test(HttpServletRequest req, HttpServletResponse res, Customer c) {
 		
 		
-		return c;
 	}
-	
-
 }
