@@ -8,7 +8,7 @@ This Project uses technologies Java and JDBC to connect to the MYSQL Database.
 
 The Application gave 8 choices:
 
-* Display the transactions made by computers living in a given zip code for a given month and year.
+* Display the transactions made by customers living in a given zip code for a given month and year.
 
 * Display the total number and total values of transactions for a given type
 
